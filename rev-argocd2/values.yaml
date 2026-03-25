@@ -13,7 +13,7 @@ service:
   targetPort: 8080
 
 config:
-  APP_COLOR: "red"
+  APP_COLOR: red
 
 testfile:
   name: "testfile.txt"
