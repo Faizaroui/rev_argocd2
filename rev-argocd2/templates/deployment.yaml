@@ -20,11 +20,7 @@ spec:
           ports:
             - containerPort: {{ .Values.service.targetPort }}
           env:
-            - name: APP_COLOR
-              valueFrom:
-                configMapKeyRef:
-                  name: {{ .Release.Name }}-config
-                  key: APP_COLOR
+            - APP_COLOR: red
           volumeMounts:
             - name: data-volume
               mountPath: /data/testfile.txt
